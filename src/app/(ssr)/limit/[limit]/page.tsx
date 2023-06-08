@@ -30,7 +30,7 @@ const IdImgPage = async ({ params: { limit } }: PageProps) => {
   ).json();
 
   return (
-    <div className="flex min-h-screen flex-col items-center p-10">
+    <div className="flex flex-col items-center p-10">
       <h1 className="text-2xl font-bold text-center my-4">
         Here are your {limit} beautiful images:
       </h1>

@@ -19,7 +19,7 @@ const DynamicPage = async () => {
   const imgId = jsonImg.id;
 
   return (
-    <div className="flex min-h-screen flex-col items-center p-10">
+    <div className="flex flex-col items-center p-10">
       <h1 className="text-2xl font-bold text-center my-4">ISR</h1>
       <p className="md:mx-10 border p-2 mx-5 lg:w-1/2 text-justify">
         This page uses <strong>Incremental Static Regentration</strong>. A new

@@ -23,12 +23,14 @@ Next 13.4+ features covered:
    - ISR
    - revalidation (3 ways)
    - caching
+   - CSR
 
 1. Metadata
 1. Generate Dynamic metadata
 1. Generate Static Params
 1. Disable Dynamic Params
 1. not-found, error and layout files
+1. API routes (GET, POST, PATCH, DELETE requests)
 1. nextjs config
 
 Others:

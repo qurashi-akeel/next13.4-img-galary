@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const navItems = ['static', 'dynamic', 'isr', 'limit/10'];
+const navItems = ['static', 'dynamic', 'isr', 'limit/10', 'search'];
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -24,7 +24,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <Link
               key={item}
-              className={`uppercase px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:hover:bg-gray-600 dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-100 ${
+              className={`uppercase px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:hover:bg-gray-600 dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 hover:bg-gray-100 ${
                 pathname === '/' + item ? 'bg-gray-300' : ''
               }`}
               href={'/' + item}

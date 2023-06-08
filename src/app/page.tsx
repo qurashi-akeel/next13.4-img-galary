@@ -3,13 +3,11 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-10">
-      {/* <Image
-        src={UNSPLASH_URL as string}
-        alt="image"
-        width={800}
-        height={500}
-      /> */}
+    <main className="flex flex-col items-center justify-between p-10">
+      <h1 className="font-bold text-4xl my-20 max-w-xl">
+        Search for any image with your favourite fetching method, and observe
+        the difference
+      </h1>
     </main>
   );
 }
