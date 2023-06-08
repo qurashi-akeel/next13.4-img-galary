@@ -5,13 +5,13 @@ export const metadata = {
   title: 'Incremental static regenration',
 };
 
-// export const revalidate = 10; // for all fetches in this page.
+// export const revalidate = 60; // for all fetches in this page.
 
 const DynamicPage = async () => {
   const jsonImg: ImageType = await (
     await fetch(`${IMGS_BASE_URL}/id/${new Date().getSeconds()}/info`, {
       next: {
-        revalidate: 10, // for only this fetch call
+        revalidate: 60, // for only this fetch call
       },
     })
   ).json();
@@ -23,7 +23,7 @@ const DynamicPage = async () => {
       <h1 className="text-2xl font-bold text-center my-4">ISR</h1>
       <p className="md:mx-10 border p-2 mx-5 lg:w-1/2 text-justify">
         This page uses <strong>Incremental Static Regentration</strong>. A new
-        image is fetched every 10 seconds (revalidate: 10) after refreshing the
+        image is fetched every minute (revalidate: 60) after refreshing the
         page and then served from the cache for that duration.
       </p>
       <div className="flex justify-center m-4 relative">
