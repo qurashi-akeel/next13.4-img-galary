@@ -2,7 +2,11 @@
 
 > Learning SSR, ISR, SSG, CSR etc, with new app directory and other new features.
 
+---
+
 Random Images without api key: [Here](https://allegra9.medium.com/unsplash-without-api-ab2dcdb503a0) (But this doesn't provide json)
+
+---
 
 Here we are using [This API](https://picsum.photos/)
 
@@ -10,6 +14,8 @@ Here we are using [This API](https://picsum.photos/)
 - With page number & limit: https://picsum.photos/v2/list?page=2&limit=100
 - Get image **JSON** by id: https://picsum.photos/id/0/info
 - Get image of specific id: https://picsum.photos/id/106/2592/1728
+
+---
 
 Next 13.4+ features covered:
 
@@ -32,6 +38,9 @@ Next 13.4+ features covered:
 1. not-found, error and layout files
 1. API routes (GET, POST, PATCH, DELETE requests)
 1. nextjs config
+1. Social media OG image (opengraph-image.png)
+
+---
 
 Others:
 
